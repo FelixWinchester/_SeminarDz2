@@ -4,13 +4,13 @@
 
 using namespace std;
 
-int fib(int n, int *a)
+int fiba(int n, int *a)
 {
 	if (a[n] == -1)
 	{
 		if (n <= 1) a[n] = 0;
 		if (n == 2) a[n] = 1;
-		else a[n] = fib(n - 1, a) + fib(n - 2,a) + fib(n - 3,a);
+		else a[n] = fiba(n - 1, a) + fiba(n - 2,a) + fiba(n - 3,a);
 	}
 	return a[n];
 }
@@ -25,5 +25,5 @@ int main()
 	}
 	a[0] = 0;
 	a[1] = 0;
-	cout << fib(7, a);
+	cout << fiba(7, a);
 }
