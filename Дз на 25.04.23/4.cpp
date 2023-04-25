@@ -31,7 +31,7 @@ public:
         if (size == capacity) {
             auto new_capacity = capacity == 0 ? 1 : 2 * capacity;
             auto new_data = new T[new_capacity];
-            std::move(begin(), end(), new_data);
+            move(begin(), end(), new_data);
             delete[] data;
             data = new_data;
             capacity = new_capacity;
