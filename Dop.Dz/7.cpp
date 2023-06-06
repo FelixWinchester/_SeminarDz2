@@ -37,5 +37,3 @@ int main() {
 
     return 0;
 }
-// input: Kak je hochetsya tyanochku, huden'kuiy, blednuiy ne ochen' visokuiy
-// Res: h
